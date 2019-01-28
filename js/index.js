@@ -42,7 +42,7 @@ const siteContent = {
   }
 };
 
-// Image Selectors and Assignments
+// Image Selectors and Assignments =======================
 const logo = document.querySelector("#logo-img");
 logo.src = siteContent["nav"]["img-src"];
 
@@ -52,7 +52,7 @@ heroImage.src = siteContent["cta"]["img-src"];
 const middleWrap = document.querySelector("#middle-img");
 middleWrap.src = siteContent["main-content"]["middle-img-src"];
 
-// Text Selectors and Assignments
+// Text Selectors and Assignments =======================
 const heroText = document.querySelector("h1");
 heroText.textContent = siteContent.cta.h1;
 
@@ -75,11 +75,11 @@ paragraphText[6].textContent = siteContent.contact.phone;
 paragraphText[7].textContent = siteContent.contact.email;
 paragraphText[8].textContent = siteContent.footer.copyright;
 
-// Button Selectors and Assignments
+// Button Selectors and Assignments =======================
 const ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent.cta.button;
 
-// Nav Selectors and Assignments
+// Nav Selectors and Assignments =======================
 const navItems = document.querySelectorAll("a");
 navItems[0].textContent = siteContent["nav"]["nav-item-1"];
 navItems[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -87,3 +87,6 @@ navItems[2].textContent = siteContent["nav"]["nav-item-3"];
 navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// Converting all Nav Items to Green =======================
+navItems.forEach(item => (item.style = "color: green"));
