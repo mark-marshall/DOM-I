@@ -62,6 +62,7 @@ mainTextHeaders[1].textContent = siteContent["main-content"]["about-h4"];
 mainTextHeaders[2].textContent = siteContent["main-content"]["services-h4"];
 mainTextHeaders[3].textContent = siteContent["main-content"]["product-h4"];
 mainTextHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+mainTextHeaders[5].textContent = siteContent["contact"]["contact-h4"];
 
 const paragraphText = document.querySelectorAll("p");
 paragraphText[0].textContent = siteContent["main-content"]["features-content"];
@@ -69,3 +70,7 @@ paragraphText[1].textContent = siteContent["main-content"]["about-content"];
 paragraphText[2].textContent = siteContent["main-content"]["services-content"];
 paragraphText[3].textContent = siteContent["main-content"]["product-content"];
 paragraphText[4].textContent = siteContent["main-content"]["vision-content"];
+paragraphText[5].textContent = siteContent.contact.address;
+paragraphText[6].textContent = siteContent.contact.phone;
+paragraphText[7].textContent = siteContent.contact.email;
+paragraphText[8].textContent = siteContent.footer.copyright;
