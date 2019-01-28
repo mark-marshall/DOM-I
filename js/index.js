@@ -90,3 +90,14 @@ navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // Converting all Nav Items to Green =======================
 navItems.forEach(item => (item.style = "color: green"));
+
+// Adding Nav Items =======================
+const navv = document.querySelector("nav");
+
+const blogNav = document.createElement("a");
+blogNav.textContent = "Blog";
+navv.appendChild(blogNav);
+
+const supportNav = document.createElement("a");
+supportNav.textContent = "Support";
+navv.appendChild(supportNav);
