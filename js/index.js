@@ -74,3 +74,7 @@ paragraphText[5].textContent = siteContent.contact.address;
 paragraphText[6].textContent = siteContent.contact.phone;
 paragraphText[7].textContent = siteContent.contact.email;
 paragraphText[8].textContent = siteContent.footer.copyright;
+
+// Button Selectors and Assignments
+const ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent.cta.button;
