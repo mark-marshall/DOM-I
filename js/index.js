@@ -79,6 +79,17 @@ paragraphText[8].textContent = siteContent.footer.copyright;
 const ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent.cta.button;
 
+// Adding Nav Items =======================
+const navv = document.querySelector("nav");
+
+const blogNav = document.createElement("a");
+blogNav.textContent = "Blog";
+navv.appendChild(blogNav);
+
+const supportNav = document.createElement("a");
+supportNav.textContent = "Support";
+navv.appendChild(supportNav);
+
 // Nav Selectors and Assignments =======================
 const navItems = document.querySelectorAll("a");
 navItems[0].textContent = siteContent["nav"]["nav-item-1"];
@@ -90,14 +101,3 @@ navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // Converting all Nav Items to Green =======================
 navItems.forEach(item => (item.style = "color: green"));
-
-// Adding Nav Items =======================
-const navv = document.querySelector("nav");
-
-const blogNav = document.createElement("a");
-blogNav.textContent = "Blog";
-navv.appendChild(blogNav);
-
-const supportNav = document.createElement("a");
-supportNav.textContent = "Support";
-navv.appendChild(supportNav);
