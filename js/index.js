@@ -180,9 +180,9 @@ middleWrap.style.borderRadius = "20px";
 
 // Testing button functionality
 const bodyA = document.querySelector("body");
-ctaButton.addEventListener("click", displayNewText);
+ctaButton.addEventListener("click", enableDarkMode);
 
-function displayNewText() {
+function enableDarkMode() {
   ctaButton.textContent = siteContent2.cta.button;
   bodyA.style.backgroundColor = "#141d26";
   heroText.textContent = siteContent2.cta.h1;
