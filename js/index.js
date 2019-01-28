@@ -51,3 +51,21 @@ heroImage.src = siteContent["cta"]["img-src"];
 
 const middleWrap = document.querySelector("#middle-img");
 middleWrap.src = siteContent["main-content"]["middle-img-src"];
+
+// Text Selectors and Assignments
+const heroText = document.querySelector("h1");
+heroText.textContent = siteContent.cta.h1;
+
+const mainTextHeaders = document.querySelectorAll("h4");
+mainTextHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+mainTextHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+mainTextHeaders[2].textContent = siteContent["main-content"]["services-h4"];
+mainTextHeaders[3].textContent = siteContent["main-content"]["product-h4"];
+mainTextHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const paragraphText = document.querySelectorAll("p");
+paragraphText[0].textContent = siteContent["main-content"]["features-content"];
+paragraphText[1].textContent = siteContent["main-content"]["about-content"];
+paragraphText[2].textContent = siteContent["main-content"]["services-content"];
+paragraphText[3].textContent = siteContent["main-content"]["product-content"];
+paragraphText[4].textContent = siteContent["main-content"]["vision-content"];
