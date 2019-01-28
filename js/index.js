@@ -161,6 +161,11 @@ navItems.forEach(item => (item.style = "color: green"));
 // Adding a class to all nav items at once
 navItems.forEach(item => (item.className = "navItemSet"));
 
+// Adding styles to ctaButton
+ctaButton.style.backgroundColor = "orange";
+ctaButton.style.border = "3px solid red";
+ctaButton.style.borderRadius = "3px";
+
 // Toggling orange text color on button
 ctaButton.classList.toggle("testing");
 ctaButton.classList.toggle("testing");
