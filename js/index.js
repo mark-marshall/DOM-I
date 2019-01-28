@@ -10,7 +10,7 @@ const siteContent = {
   },
   cta: {
     h1: "DOM Is Awesome",
-    button: "Get Started",
+    button: "Dark Mode",
     "img-src": "img/header-img.png"
   },
   "main-content": {
@@ -53,8 +53,8 @@ const siteContent2 = {
     "img-src": "img/logo.png"
   },
   cta: {
-    h1: "DOM Is Awesome Part II",
-    button: "Get Started",
+    h1: "DOM DARK MODE",
+    button: "🌔 Enabled",
     "img-src": "img/header-img.png"
   },
   "main-content": {
@@ -179,11 +179,15 @@ paragraphText.forEach(item => (item.style = "font-weight: bold"));
 middleWrap.style.borderRadius = "20px";
 
 // Testing button functionality
-ctaButton.addEventListener('click', displayNewText);
+const bodyA = document.querySelector("body");
+ctaButton.addEventListener("click", displayNewText);
 
 function displayNewText() {
+  ctaButton.textContent = siteContent2.cta.button;
+  bodyA.style.backgroundColor = "#141d26";
   heroText.textContent = siteContent2.cta.h1;
-  heroText.style.color = "red";
-  mainTextHeaders.forEach(item => (item.textContent = "replaced"));
-  navItems.forEach(item => (item.style = "color: orange; font-weight: bold"));
+  heroText.style.color = "white";
+  mainTextHeaders.forEach(item => (item.style.color = "white"));
+  paragraphText.forEach(item => (item.style.color = "white"));
+  navItems.forEach(item => (item.style = "color: white; font-weight: bold"));
 }
