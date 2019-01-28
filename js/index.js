@@ -101,3 +101,13 @@ navItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // Converting all Nav Items to Green =======================
 navItems.forEach(item => (item.style = "color: green"));
+
+// Experimentation starts here =======================
+// Adding a class to all nav items at once
+navItems.forEach(item => (item.className = "navItemSet"));
+
+// Toggling orange text color on button
+ctaButton.classList.toggle("testing");
+ctaButton.classList.toggle("testing");
+ctaButton.classList.toggle("testing");
+ctaButton.classList.toggle("testing");
