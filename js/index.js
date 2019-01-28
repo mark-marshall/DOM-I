@@ -111,3 +111,9 @@ ctaButton.classList.toggle("testing");
 ctaButton.classList.toggle("testing");
 ctaButton.classList.toggle("testing");
 ctaButton.classList.toggle("testing");
+
+// Changing font-weight on text
+paragraphText.forEach(item => (item.style = "font-weight: bold"));
+
+// Adding border-radius
+middleWrap.style.borderRadius = "20px";
