@@ -177,3 +177,13 @@ paragraphText.forEach(item => (item.style = "font-weight: bold"));
 
 // Adding border-radius
 middleWrap.style.borderRadius = "20px";
+
+// Testing button functionality
+ctaButton.addEventListener('click', displayNewText);
+
+function displayNewText() {
+  heroText.textContent = siteContent2.cta.h1;
+  heroText.style.color = "red";
+  mainTextHeaders.forEach(item => (item.textContent = "replaced"));
+  navItems.forEach(item => (item.style = "color: orange; font-weight: bold"));
+}
